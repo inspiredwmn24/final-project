@@ -1,0 +1,277 @@
+/*
+    Style Guide in CSS
+    text color: black;
+    background: lavendar;
+    subtext: navy;
+    subbackground: white;
+
+    base font size: 16px;
+    all fonts: 1rem;
+    subtext: 0.75rem;
+
+    base phone sizes
+    small phone: 320px;
+    normal phone: 420px;
+    larger phone: 480px;
+    phablet: 512px;
+    tablet: 610px;
+    tablet larger: 768px;
+    desktop: 960px;
+    widescreen: 1080px;
+    4k: 4000px;
+
+
+    /*
+
+	Media Queries
+    */
+
+    @media (min-width: 320px)	{
+    	#phone {
+    		display: block;
+    		}
+    	}
+
+     @media (min-width: 420px)	{
+    	#larger-phone {
+    		display: block;
+    	}
+    	#phone {
+    		display: none;
+    		}
+
+  		 }
+    
+    @media (min-width: 610px)	{
+    	#tablet	{
+    		display: block;
+		}	
+    	#larger-phone {
+    		display: none;
+
+    	}	
+    	#phone {
+    		display: none;
+    	}
+
+    }
+
+.container {
+	display: flex;
+}
+
+
+header	{
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    background-color: #e1f5fe;
+    margin-left: auto;	
+    margin-right: auto;
+    text-align: center;
+}
+
+header img	{
+	height:100px;
+	width: 500px;
+	margin-right: 50px;
+	margin-left: 50px;
+} 
+
+nav {
+	list-style: none;
+	font-weight: italic;
+	font-size: 12px;
+	height: 50px;
+	background-color: #b0bec5;
+	margin: 0px;
+	padding: 0px;	
+	display: inline-block;	
+}
+
+/*Search box*/
+
+.searchbox	{
+	background-color: #eaf8fc;
+    background-image: linear-gradient(#fff, #d4e8ec);
+    border-radius: 35px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c4d9df #a4c3ca #83afb7;            
+    width: 500px;
+    height: 35px;
+    padding: 10px;
+    margin: 100px auto 50px;
+    overflow: hidden; /* Clear floats */
+}
+
+
+#search,
+#submit {
+    float: left;
+}
+
+#search {
+    padding: 5px 9px;
+    height: 23px;
+    width: 200px;
+    border: 1px solid #a4c3ca;
+    font: normal 13px 'trebuchet MS', arial, helvetica;
+    background: #f1f1f1;
+    border-radius: 50px 3px 3px 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+
+/* ----------------------- */
+
+#submit	{       
+    background-color: #8c9eff;
+    background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 50px 50px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 35px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    width: 90px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #23441e;    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#submit:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submit:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
+
+/*Unspoken Insights*/    
+section.one	{
+	background: #212121;
+	font-size: 24px;
+	color: #ffffff;
+	padding: 25px;
+	margin-right: 0px;
+	margin-left: 0px;	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-style: groove;
+	border-color: #e1f5fe;
+	border-width: thick;
+}
+
+h1	{
+	font-size: 24px;
+	text-align: center;	
+	height: 50px;
+}
+
+
+h2	{
+	font-size: 22px;
+	text-align: center;	
+	height: 40px;
+}
+
+/*Career Development Section*/
+section.two {
+	font-size: 16px;
+	margin: 40px;
+	margin-right: 90px;
+	margin-left: 50px;	
+	margin-top: 10px;
+	padding: 60px;
+	background: #ffffff;
+}
+
+/*Building Quality Relationships Section*/
+section.three {
+	font-size: 10px;
+	margin: 70px;
+	margin-right: 90px;
+	margin-left: 50px;	
+	margin-top: 10px;
+	padding: 50px;
+	background: #ffffff;
+	border-radius: 20px;
+}
+
+/*Worklife Balace Section*/
+section.four {
+	font-size: 10px;
+	margin: 70px;
+	margin-right: 90px;
+	margin-left: 50px;	
+	margin-top: 10px;
+	padding: 50px;
+	background: #ffffff;
+	border-radius: 20px;
+}
+
+.circle {
+  width: 100px;
+  height: 110px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  background: #b0bec5;
+  float: right;
+}
+
+
+img {
+	max-width: 160px;
+	max-height: 130px;
+	margin-left: 0px;
+	float: left;
+
+}
+
+
+body	{
+	text-align: left;
+	font-style: sans-serif;
+	color: #1a237e;
+	padding: 10px;
+	
+}	
+	
+	
+footer nav {
+	background: #212121;
+	font-size: 16px;
+	height: 150px;
+	margin: 0px;
+	padding: 0px;	
+	display: inline-block;	
+    text-align: center;	
+}
+
+ footer img {
+	margin: 30px;	
+	padding: 20px;
+	text-align: center;
+	float: none;
+}
+
+footer p {
+	font-size: 8px;
+}
+
+
